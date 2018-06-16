@@ -28,17 +28,17 @@ int main() {
     std::cout << "Enter the brackets as a single expression and then press enter when done. \n";
     // std::cin.ignore();
     
-    // std::cin >> inputArray;
-    char in[50];
-    std::cin >> in;
+    std::cin >> inputArray;
+    // char in[50];
+    // std::cin >> in;
 
-    for(int i=0; i< strlen(in); i++) {
-        if(in[i]== '(' || in[i]== '{' || in[i]== '[') {
-            push(in[i]);
+    for(int i=0; i< strlen(inputArray); i++) {
+        if(inputArray[i]== '(' || inputArray[i]== '{' || inputArray[i]== '[') {
+            push(inputArray[i]);
             std::cout << "pushed\n"; 
         }
 
-        else if(in[i]== ')') {
+        else if(inputArray[i]== ')') {
             if(!isEmpty()) {
                 if(top() == '(') {
                     pop();
@@ -51,7 +51,7 @@ int main() {
             }
         }
 
-        else if(in[i]== '}') {
+        else if(inputArray[i]== '}') {
             if(!isEmpty()) {
                 if(top() == '{') {
                     pop();
@@ -64,7 +64,7 @@ int main() {
             }
         }
 
-        else if(in[i]== ']') {
+        else if(inputArray[i]== ']') {
             if(!isEmpty()) {
                 if(top() == '[') {
                     pop();

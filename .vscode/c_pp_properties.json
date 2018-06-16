@@ -30,6 +30,8 @@
 			"includePath": ["/usr/include", "/usr/local/include", "${workspaceRoot}"],
 			"defines": [],
 			"intelliSenseMode": "clang-x64",
+			"clang.cflags": ["-std=c99"],
+			"clang.cxxflags": ["-std=c++11"],
 			"browse": {
 				"path": ["/usr/include", "/usr/local/include", "${workspaceRoot}"],
 				"limitSymbolsToIncludedHeaders": true,

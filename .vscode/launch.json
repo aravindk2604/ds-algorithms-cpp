@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/calc.out",
+            "program": "${workspaceFolder}/cppOutput.out",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
