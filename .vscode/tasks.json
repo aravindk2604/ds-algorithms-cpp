@@ -6,7 +6,7 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "g++ -g -std=c++11 operatorOverloadingExample.cpp -o cppOutput.out",
+            "command": "g++ -g -std=c++11 linkedList.cpp -o cppOutput.out",
             "group": {
                 "kind": "build",
                 "isDefault": true
