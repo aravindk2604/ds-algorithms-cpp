@@ -117,7 +117,7 @@ class LinkedList {
             prev = curr;
             curr = curr->next;
         }
-        tail->data = prev->data;
+        tail = prev;
         tail->next = nullptr;
 
         // std::cout << prev->data << "\n";
