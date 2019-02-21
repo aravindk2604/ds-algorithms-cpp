@@ -1,0 +1,69 @@
+# Google C++ coding style guidelines
+
+## Naming Conventions
+
+#### Variables (all lowercase separated by underscore)
+* Use complete words
+* Do not abbreviate
+* Allowed to use common and standard abbreviations like num, i, ptr
+* use underscore to separate the words and use all lowercase
+* Examples
+- int price_count_reader
+- float lstm_size
+- char names
+- int* serial_num  
+  
+#### Filenames (all lowercase and _ or -)
+* my good class.cc
+* my-good-class.cc
+* mygoodclass.cc
+* mygoodclass_test.cc 
+* Do not use underscore in the beginning (_mygoodclass.cc)
+* C++ files extension is .cc
+* header files extension is .h
+  
+#### Type Names (capitalize first letter of each word and no spaces or underscores)
+
+* classes, structs, type aliases, enums and type template parameters
+* class UrlTable { ... }
+* struct NodeDataStructure { ... }
+* typedef hash_map<UrlTableProperties*, string> PropertiesMap
+* using PropertiesMap = hash_map<UrlTableProperties*, string>
+*enum UrlTable
+
+
+#### Variable Names
+* all lowercase with underscore between words
+* Function parameter: (a_local_variable)
+* Struct data member: (a_struct_variable)
+* Class data member: (a_class_data_member_ ). There is a trailing underscore
+
+#### Constant Names (const and constexpr)
+* 'k' is prepended to the const variable name
+* kMaxAgeNum = 90
+* kVersion1_2_2 = 37
+
+#### Function Names
+* Mixed case like class names
+* AddTableEntry()
+* DeleteUrl()
+* getters and setter may be named like Variables
+* int get_count()
+* void set_count(int count)
+
+#### Namespace names
+* all lowercase and avoid popular names
+* name should be that of the project or the containing folder
+* websearch::index_util
+
+#### Enum names
+* prefer to prefix 'k' to the Naming
+* should name like constants or MACROS
+* enum OutOfOrder { kOK = 0, kErrorOutOfMemory, kErrorManageRequired};
+* the 'k' can be omitted and written like MACROS but the above is preferred
+* enum OutOfOrder {OK = 0, OUT_OF_MEMORY = 1};
+
+#### Macro names (ALL CAPS)
+* #define ROUND(x) ...
+* #define PI_ROUND 3.0
+
